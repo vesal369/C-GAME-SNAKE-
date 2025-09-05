@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Satisfaction Survey</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+    body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+.top-bar {
+    background: #222;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 18px;
+    font-weight: bold;
+    color: #72c02c;
+}
+
+.logo span {
+    color: rgb(255, 255, 255);
+}
+
+.buy-btn {
+    background: #72c02c;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.header {
+    background: #00a99d;
+    padding: 20px;
+    text-align-last: left;
+    color: white;
+}
+
+.header .brand {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.header nav a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+}
+
+.header .highlight {
+    color: rgb(255, 251, 0);
+    font-weight: bold;
+}
+
+.content {
+    text-align: center;
+    padding: 40px 20px;
+    background: #00a99d;
+    color: white;
+}
+
+.content h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+
+}
+
+.progress-bar {
+    margin-top: 20px;
+}
+
+.progress {
+    width: 100%;
+    height: 10px;
+    background: rgb(0, 0, 0);
+    margin: 2px auto;
+    border-radius: 3px;
+}
+.defineGridSuray {
+            margin-right: -15px;
+            margin-left: -15px;
+            display: block;
+            unicode-bidi: isolate;
+            width:100% auto;
+            margin: 1 auto;
+            border-radius: 10px;
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif; 
+            display: flex;
+        }
+        
+        .survey-container {
+            max-width: 600px;
+            background: rgb(253, 253, 253);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: -15px -12px -10px rgb(110, 13, 238);
+            margin: 50px auto;
+            box-shadow: 1px 5px 15px rgb(3, 28, 255);
+            border: 2px solid #000000;
+        }
+        
+        .button_medium_36{
+            border-radius: 3px;
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+            border-bottom-right-radius: 3px;
+            border-bottom-left-radius: 3px;
+            border-top-width: 2px;
+            border-right-width: 2px;
+            border-bottom-width: 2px;
+            border-left-width: 2px;
+            border-top-style: solid;
+            border-right-style: solid;
+            border-bottom-style: solid;
+            border-left-style: solid;
+            border-top-color: rgb(0, 0, 0);
+            border-right-color: rgb(0, 0, 0);
+            border-bottom-color: rgb(0, 0, 0);
+            border-left-color: rgb(0, 0, 0);
+            border-image-source: initial;
+            border-image-slice: initial;
+            border-image-width: initial;
+            border-image-outset: initial;
+            border-image-repeat: initial;
+            padding-top: 7px;
+            padding-right: 20px;
+            padding-bottom: 7px;
+            padding-left: 20px;
+            color: rgb(0, 0, 0);
+            display: inline-block;
+            font-weight: 600;
+            text-transform: uppercase;
+            outline: 0;
+            outline-color: chartreuse;
+            outline-style: initial;
+            outline-width: 0px;
+        }
+        .button_medium_36:hover{
+            background-color: rgb(3, 28, 255);
+            color: rgb(255, 255, 255);
+        }
+        .body { 
+            font-family: Arial, sans-serif; 
+        }
+        .question-answer { 
+            padding: 50px 0;
+         }
+        .question-answer h2, .screenshots h2 { 
+            text-align: center; 
+            margin-bottom: 20px;
+         }
+        .question {
+             font-weight: bold; margin-top: 20px; 
+            }
+        .screenshots img {
+             width: 100%; 
+             height: auto; 
+             border-radius: 5px;
+             }
+        .buy-now {
+             background-color: #4CAF50;
+              color: white;
+               border: none;
+             padding: 10px 20px; 
+            }
+        .back-to-top {
+             position: fixed;
+              bottom: 20px; 
+              right: 20px; 
+              background: black;
+               color: white;
+                padding: 10px;
+             }
+        .body { 
+            font-family: Arial, sans-serif;
+         }
+        .about-us { 
+            padding: 50px 0;
+             text-align: center; 
+        }
+        .team img { 
+            width: 100%; 
+            border-radius: 5px; 
+        }
+        .footer { 
+            background-color: #20b2aa; 
+            color: white; 
+            padding: 30px 0; 
+        }
+        .footer .contact-info i { 
+            margin-right: 10px;
+         }
+        .bottom-bar { background: black; 
+            color: white;
+             padding: 15px; 
+             text-align: center;
+             }
+        .back-to-top {
+             position: fixed;
+              bottom: 20px;
+               right: 20px;
+                background: rgb(0, 0, 0); 
+                color: white; 
+                padding: 10px; 
+                border-radius: 50px;
+             }
+        .back-to-top :hover{
+            background-color: #00a99d;
+            border-radius: 5px;
+        }
+        .question-box::before {
+            content: "\f059";
+          font-family: FontAwesome;
+            font-style: normal;
+           font-weight: 400;
+            text-decoration: inherit;
+            font-size: 30px;
+            position: absolute;
+         color: #999;
+            top: 5px;
+         left: 0;
+        }
+        *, *::before
+        *:after {
+        -webkit-box-sizing: border-box;
+         -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        }
+        .question-box span{
+            background-color: #a7a3a3;
+            border-radius: 20px;
+        }
+        .containepr{
+            border: 1px solid rgba(0, 255, 55, 0);
+            width: auto;
+            margin: 0 auto;
+            height: 400px;
+            position: relative;
+            background-color: #00a99d;
+            top: 10;
+            box-shadow: 1px 5px 12px rgb(3, 255, 234);
+            border-top-color: rgb(0, 0, 0);
+            border-bottom-color: rgb(0, 0, 0);
+        }
+        .end line{
+            width: 100%;
+          background: url(../img/divider.png) center top no-repeat;
+          height: 10px;
+          margin: 30px 0;
+          line-height: 1px;
+        }
+        .team-82{
+            width: 50px;
+            font-size: 22px;
+         line-height: 26px;
+         font-weight: 600;
+         margin-bottom: 25px;
+         text-align: left;
+        }
+        .mb-3 :hover{
+            border: 2px solid rgb(0, 4, 255);
+        }
+        .form-label :hover{
+            color: #00a99d;
+            background-color: #03ff03;
+        }
+        .blok-survay{
+            box-sizing: border-box;
+            margin-bottom: 30px;
+            width: 33.333%;
+            text-align: center;
+            position: relative;
+          min-height: 1px;
+              padding-right: 15px;
+         padding-left: 15px;
+         float: left;
+         box-sizing: border-box;
+        }
+        
+    </style>
+</head>
+<body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satisfaction Survey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="top-bar">
+        <div class="logo">envato<span>market</span></div>
+        <button class="buy-btn">Buy now</button>
+    </div>
+
+    <div class="header">
+
+        <h1 class="brand">ANNOVA</h1>
+        <div class="brand">
+        <nav>
+            <a href="#">STANDALONE VERSION</a>
+            <a href="#">BRANCHING WIZARD</a>
+            <a href="#" class="highlight">PURCHASE THIS TEMPLATE</a>
+        </div>
+        </nav>
+    </div>
+            <!--End container-->
+        </header>
+    </section>
+    <div class="containepr">
+    <div class="container">
+        <div class="survey-container">
+            <h2 class="text-center"><b>SATISFACTION SUEVEY</b></h2>
+            <p class="text-center text-muted">Help us to improve our service and customer satisfaction.</p>
+            <div class="progress-bar">
+                <span>PROGRESS</span>
+                <div class="progress"></div>
+            </div>
+            <h class="team-82">Enter your personal info</h>
+            <form><br>
+                <div class="mb-3">
+                    <label for="firstName" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="firstName" required>
+                </div>
+                <div class="mb-3">
+                    <label for="lastName" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="lastName" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="country" class="form-label">Select Your Country</label>
+                    <select class="form-select" id="country" required>
+                        <option value="">Choose...</option>
+                        <option value="USA">USA</option>
+                        <option value="Canada">Canada</option>
+                        <option value="cambodia">Cambodia</option>
+                        <option value="japen">Japen</optino>
+                        <option value="UK">UK</option>
+                        <option value="Panama">Panama</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="age" class="form-label">Age</label>
+                    <input type="number" class="form-control" id="age" required>
+                </div>
+                <div class="mb-3">
+                    <label for="age" class="form-label">Your incrementer</label>
+                    <input type="number" class="form-control" id="age" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Gender</label><br>
+                    <input type="radio" name="gender" value="Male"> Male
+                    <input type="radio" name="gender" value="Female"> Female
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="terms">
+                    <label class="form-check-label" for="terms">Accept terms and conditions</label>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <button type="button" class="btn btn-secondary">Backward</button>
+                    <button type="submit" class="btn btn-primary">Forward</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="end line"></div>
+    <div class="col-md-12 ">
+        <h2 class="text-center">
+        <b style="color: rgb(0, 0, 0); font-size:55px ;">THANK YOU FOR YOUR TIME</b>
+        <p style="color: rgb(0, 0, 0); font-size: 25px;">This help us to improve our service and customer satisfaction.</p>
+    </div>
+    <!-- Three Block -->
+     <div class="defineGridSuray">
+        <div class="block-survay">
+            <!-- 1 -->
+            <img src="https://www.ansonika.com/annova/img/icon-1.png" alt="images">
+            <p style="color: rgb(0, 0, 0);font-size: 30px;"><strong>FULLY RESPONSSIVE</strong>
+            <p small style="color: rgb(0, 0, 0);">Lorem ipsum dolor sit amet, in porro albucius qui, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus.</small></p>
+            <a href="#" title="read more" class="button_medium_36">read more</a>
+        </div>
+           <!-- 2 -->
+        <div class="block-survay">
+            <img src="https://www.ansonika.com/annova/img/icon-2.png" alt="images">
+            <p style="color: rgb(0, 0, 0);font-size: 30px;"><strong>USEFUL SURRVEY DATA</strong>
+            <p small style="color: rgb(0, 0, 0);">Lorem ipsum dolor sit amet, in porro albucius qui, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus.</p>
+            <a href="#" title="read more" class="button_medium_36">read more</a>
+        </div>
+           <!-- 3 -->
+        <div class="block-survay">
+            <img src="https://www.ansonika.com/annova/img/icon-3.png" alt="images">
+            <p st style="color: rgb(0, 0, 0);font-size: 30px;"><strong>RECEIVE IT BY EMAIL</strong>
+            <p small style="color: rgb(0, 0, 0);">Lorem ipsum dolor sit amet, in porro albucius qui, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus.</p>
+            <a href="#" title="read more" class="button_medium_36">read more</a>
+        </div>
+     </div>
+     <section class="question-answer container">
+        <h2 style="color: rgb(0, 0, 0);">Question and Answer</h2>
+        <p class="text-center">This helps us improve our service and customer satisfaction.</p>
+        <div class="row">
+            <div class="col-md-6">
+                    <!--before-->
+                    <strong  class="question-box"><span>&#10067;</span>No sit debitis meliore postulant, per ex prompta alterum sanctus?</strong> 
+                    <p>Lorem ipsum dolor sit amet, in porro albucius qui, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus.</p>
+            </div>
+            <div class="col-md-6">
+                <strong class="question-box"><span>&#10067;</span>Autem putent singulis usu ea, bonorum suscipit eum?</strong>
+                <p>Lorem ipsum dolor sit amet, in porro albucius qui, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus.</p>
+            </div>
+            <div class="col-md-6">
+                <strong class="question-box"><span>&#10067;</span> Eos semper adversarium at?</strong> 
+                <p>Lorem ipsum dolor sit amet, in porro albucius qui, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus.</p>
+            </div>
+            <div class="col-md-6">
+                <strong class="question-box"><span>&#10067;</span> Pro moderatius philosophia ad, ad mea mupercipit?</p></strong>
+                <p>Lorem ipsum dolor sit amet, in porro albucius qui, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus.</p>
+            </div>
+            <div class="col-md-6">
+                <strong class="question-box"><span>&#10067;</span> No sit debitis meliore postulant, per ex prompta alterum sanctus?</strong>
+                <p>Lorem ipsum dolor sit amet, in porro albucius qui, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus.</p>
+            </div>
+            <div class="col-md-6">
+                <strong class="question-box"><span>&#10067;</span> Omnium voluptatibus ei duo, vim eius rebum?</strong>
+                <p>Lorem ipsum dolor sit amet, in porro albucius qui, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="screenshots container">
+        <h2>Some Screenshots</h2>
+        <p class="text-center">This helps us improve our service and customer satisfaction.</p>
+        <div class="row screenshots">
+            <div class="col-md-3"><img src="https://www.ansonika.com/annova/img/carousel/1.jpg" alt="Screenshot"></div>
+            <div class="col-md-3"><img src="https://www.ansonika.com/annova/img/carousel/2.jpg" alt="Screenshot"></div>
+            <div class="col-md-3"><img src="https://www.ansonika.com/annova/img/carousel/3.jpg" alt="Screenshot"></div>
+            <div class="col-md-3"><img src="https://www.ansonika.com/annova/img/carousel/4.jpg" alt="Screenshot"></div>
+            <div class="col-md-3"><img src="https://www.ansonika.com/annova/img/carousel/5.jpg" alt="Screenshot"></div>
+            <div class="col-md-3"><img src="https://www.ansonika.com/annova/img/carousel/1.jpg" alt="Screenshot"></div>
+            
+        </div>
+    </section>
+     <section class="about-us container">
+        <h2>About us</h2>
+        <p>This helps us improve our service and customer satisfaction.</p>
+        <div class="row">
+            <div class="col-md-6">
+                <h4>Our History</h4>
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+                 <strong>Our Vision</strong>
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+            </div>
+            <div class="col-md-3 team">
+                <img src="https://www.ansonika.com/annova/img/team_1.jpg" alt="CEO">
+                <p><strong>Patricia Doe</strong> <span class="text-muted">CEO</span></p>
+            </div>
+            <div class="col-md-3 team">
+                <img src="https://www.ansonika.com/annova/img/team_2.jpg" alt="Manager">
+                <p><strong>Megan Fox</strong> <span class="text-muted">Manager</span></p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>About us</h4>
+                    <p>Lorem ipsum dolor sit amet, duo iudico accusamus ne...</p>
+                </div>
+                <div class="col-md-6 contact-info">
+                    <h4>Contact info</h4>
+                    <p><i class="bi bi-geo-alt"></i> 1110 Bates Avenue, Los Angeles, CA 90029, US</p>
+                    <p><i class="bi bi-telephone"></i> 41.22.319.36.10</p>
+                    <p><i class="bi bi-envelope"></i> langsovesaliphone@gmail.com</p>
+                    <p><i class="bi bi-skype"></i> Annova</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="bottom-bar">
+        Copyright &copy; Ansonika | <a href="#">Terms of Use</a> | <a href="#">Privacy</a>
+    </div>
+
+    <button class="back-to-top">Back to Top</button>
+
+    <script>
+        document.querySelector(".back-to-top").addEventListener("click", function() {11
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    </script>
+</body>
+</body> 
+</html>
